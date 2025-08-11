@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Details</title>
+</head>
+
+<body>
+
+    <form>
+        Your Username is: <p id="Username"></p><br>
+        Your Email is: <p id="email"></p><br>
+        Your password is: <p id="password"></p>
+    </form>
+
+    <script>
+        document.getElementById("Username").innerHTML = localStorage.getItem("Username");
+        document.getElementById("email").innerHTML = localStorage.getItem("email");
+        document.getElementById("password").innerHTML = localStorage.getItem("password");
+    </script>
+
+</body>
+
+</html>
